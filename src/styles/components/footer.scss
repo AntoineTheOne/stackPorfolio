@@ -1,49 +1,119 @@
 .footer {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    padding: 20px 0;
-    text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-primary);
+  padding: 20px 0;
+  text-align: center;
+}
+.wrapper {
+  padding: 20px;
+}
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+.footer .header__brand {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+}
 
-    .header__brand {
-        display: flex;
-        align-items: center;
-        color: var(--color-white);
-    }
+.footer .ligne__footer {
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  margin: 15px 0;
+}
 
-    .ligne__footer {
-        width: 80%;
-        height: 1px;
-        background-color: #444;
-        margin: 15px 0;
-    }
+.footer .footer-brand {
+  z-index: 0;
+}
 
-    nav ul {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+/* --------- CSS footer-contenu avec CSS Grid --------- */
+.footer-contenu {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item2";
+  gap: 20px;
+  align-items: start;
+  margin: 0 60px 0 auto;
+}
 
-    nav .icon {
-        padding: 5px;
-        background-color: #444;
-        border-radius: 20px;
-        fill: #fff;
-    }
+.footer-contenu .item1 {
+  grid-area: item1;
+}
 
-    .copyright {
-        width: 100%;
-        text-align: right;
-        font-size: typo(16px, 18px);
-        color: var(--color-white);
-    }
+.footer-contenu .item2 {
+  grid-area: item2;
+  justify-self: end;
+}
+
+.footer-contenu .item3 {
+  grid-area: item3;
+}
+
+/* --------- CSS nav-footer --------- */
+.footer .nav-footer {
+  margin: 0;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer .nav-item-footer {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* --------- CSS icon --------- */
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer nav .icon {
+  padding: 5px;
+  border-radius: 20px;
+  fill: #fff;
+}
+
+/* --------- copyright --------- */
+.footer .copyright {
+  width: 100%;
+  text-align: right;
+  font-size: typo(16px, 18px);
+  color: var(--color-white);
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}
+
+/* --------- MOBILE --------- */
+@media (max-width: 768px) {
+  .footer-contenu {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+    margin: 0 auto;
+  }
+
+  .footer .nav-footer,
+  .footer .item3 ul {
+    justify-content: center;
+    padding-left: 0;
+    justify-self: start;
+  }
+
+  .footer .item2 {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-self: start;
+  }
 }
