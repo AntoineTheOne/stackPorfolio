@@ -1,3 +1,5 @@
+//-------Hero accueil-----------
+
 .hero-accueil {
   position: relative;
   min-height: calc(100vh - 100px);
@@ -31,10 +33,35 @@
       margin: 0;
       gap: 60px;
       padding: 0;
+      list-style: none;
+    }
+  }
+}
 
-      li {
-        list-style: none;
+//-------Hero À propos-----------
+
+h1.a-propos {
+  text-align: center;
+}
+.hero-a-propos {
+  margin: 100px 0;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+
+    .hero .hero_media {
+      display: flex;
+      justify-content: center;
+
+      img {
+        display: block;
       }
     }
+  }
+
+  .sociaux ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
   }
 }
