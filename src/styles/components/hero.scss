@@ -48,6 +48,7 @@ h1.a-propos {
   .wrapper {
     display: grid;
     grid-template-columns: 6fr 6fr;
+    gap: 60px;
 
     .hero .hero_media {
       display: flex;
