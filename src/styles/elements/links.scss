@@ -4,14 +4,14 @@
    ========================================================================== */
 
 a {
-    color: var(--color-black);
+  color: var(--color-black);
+  text-decoration: none;
+
+  &:hover {
     text-decoration: none;
+  }
 
-    &:hover {
-        text-decoration: none;
-    }
-
-    &.disabled {
-        color: #e2e2e2;
-    }
+  &.disabled {
+    color: #e2e2e2;
+  }
 }
