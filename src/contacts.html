@@ -1,0 +1,86 @@
+{% include '_partials/_header.html' %}
+
+<section class="info-contact">
+  <h1>Intéressé par mon profil ?</h1>
+
+  <div class="info-cards">
+    <div class="card">
+      <h4>Voici mon numéro de téléphone</h4>
+      <a href="tel:+14383913063">(+1) 438-391-3063</a>
+    </div>
+    <div class="card">
+      <h4>À propos de mon CV?</h4>
+      <a href="cv.pdf" target="_blank">Mon CV</a>
+    </div>
+    <div class="card">
+      <h4>Voici mon courriel :</h4>
+      <a href="mailto:antoine.Denis2@outlook.com">antoine.Denis2@outlook.com</a>
+    </div>
+    <div class="card">
+      <h4>Mes réseaux sociaux:</h4>
+
+      <ul class="sociaux">
+        <li>
+          <a href="https://github.com/AntoineTheOne">
+            <svg class="icon icon--md">
+              <use href="assets/icons/github.svg"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61578681270512">
+            <svg class="icon icon--md">
+              <use href="assets/icons/facebook.svg"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/antoine-denis-426119386/">
+            <svg class="icon icon--md">
+              <use href="assets/icons/linkedin.svg"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="contact-form">
+  <div class="form-container">
+    <form action="submit.php" method="POST">
+      <label for="name">Votre nom</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Votre nom"
+        required
+      />
+
+      <label for="email">Votre adresse courriel</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="exemple@courriel.com"
+        required
+      />
+
+      <label for="message">Votre message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Votre message"
+        required
+      ></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="form-text">
+      <h3>En espérant que vous avez apprécié la visite de mon portfolio !</h3>
+    </div>
+  </div>
+</section>
+{% include '_partials/_footer.html' %}
