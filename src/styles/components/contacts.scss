@@ -1,9 +1,39 @@
 .info-contact {
   color: var(--color-white);
 
-  .wrapper {
+  h1 {
+    margin: 50px 0;
+    text-align: center;
   }
 
+  .info-cards {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 40px;
+
+    .card {
+      background-color: var(--color-bg-primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      border: 5px solid var(--color-white);
+      border-radius: 40px;
+    }
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-primary-hover);
+      scale: 1.1;
+    }
+  }
   .sociaux {
     display: flex;
     flex-direction: row;
@@ -17,24 +47,24 @@
 
 .contact-form {
   padding: 40px;
-}
 
-.form-container {
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  justify-content: center;
-  align-items: center;
-}
+  .form-container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    justify-content: center;
+    align-items: center;
 
-form {
-  display: flex;
-  flex-direction: column;
+    form {
+      display: flex;
+      flex-direction: column;
 
-  gap: 30px;
+      gap: 30px;
 
-  .card {
-    display: flex;
-    flex-direction: column;
+      .card {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
 
