@@ -1,8 +1,67 @@
 .info-contact {
   color: var(--color-white);
 
+  .wrapper {
+  }
+
   .sociaux {
     display: flex;
     flex-direction: row;
+    gap: 60px;
+
+    li {
+      list-style: none;
+    }
   }
+}
+
+.contact-form {
+  padding: 40px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+label {
+  color: var(--color-white);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 5px solid var(--color-black);
+  border-radius: 20px;
+  font-size: 24px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Texte à droite */
+.form-text {
+  padding: 0 50px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.4;
 }
