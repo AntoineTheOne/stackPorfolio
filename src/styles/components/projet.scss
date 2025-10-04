@@ -1,0 +1,14 @@
+.presentation-projet {
+  margin: 100px 0;
+  color: var(--color-white);
+  .cards-information {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 40px;
+
+    .card {
+      background-color: var(--color-bg-primary);
+      padding: 0 50px;
+    }
+  }
+}

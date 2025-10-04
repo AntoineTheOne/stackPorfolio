@@ -1,6 +1,6 @@
-//-------Hero accueil-----------
+//-------Hero accueil-----------//
 
-.hero-accueil {
+.hero {
   position: relative;
   min-height: calc(100vh - 100px);
 
@@ -34,14 +34,28 @@
     ul {
       display: flex;
       margin: 0;
-      gap: 60px;
+      gap: 80px;
       padding: 0;
       list-style: none;
+    }
+
+    li {
+      animation: upDown 1.5s ease-in-out infinite;
+    }
+  }
+
+  @keyframes upDown {
+    0%,
+    100% {
+      transform: translateY(-40px);
+    }
+    50% {
+      transform: translateY(10px);
     }
   }
 }
 
-//-------Hero À propos-----------
+//-------Hero À propos-----------//
 
 h1.a-propos {
   text-align: center;
@@ -54,7 +68,7 @@ h1.a-propos {
     grid-template-columns: 6fr 6fr;
     gap: 100px;
 
-    .hero .hero_media {
+    .hero_media {
       display: flex;
       justify-content: center;
 
@@ -63,11 +77,22 @@ h1.a-propos {
       }
     }
   }
-
   .sociaux ul {
     padding: 0;
     display: flex;
     list-style: none;
     gap: 60px;
+  }
+}
+
+//-------Hero projet-----------//
+
+.hero-projet {
+  .list-icon {
+    display: flex;
+    gap: 20px;
+  }
+  .arrows-down {
+    transform: translateX(-45%);
   }
 }

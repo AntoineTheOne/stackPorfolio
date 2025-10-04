@@ -1,6 +1,6 @@
 {% include '_partials/_header.html' %}
 
-<section class="hero-accueil">
+<section class="hero hero-projet">
   <div class="wrapper">
     <div class="hero_media">
       <img src="assets/images/Hero-projet-01.png" alt="hero image" />
@@ -11,12 +11,12 @@
       <h4>Projet scolaire / programmation</h4>
       <ul class="list-icon">
         <li>
-          <svg class="icon icon--md">
+          <svg class="icon icon--lg">
             <use href="#icon-unity"></use>
           </svg>
         </li>
         <li>
-          <svg class="icon icon--md">
+          <svg class="icon icon--lg">
             <use href="#icon-csharp"></use>
           </svg>
         </li>
@@ -95,23 +95,23 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
-  </div>
 
-  <div class="cards-information">
-    <div class="card">
-      <h3>Les crédits :</h3>
-      <p>
-        Le projet a été programmé par moi. Le terrain et les mécaniques du jeu
-        ont également été réalisés par moi, tandis que les prefabs proviennent
-        de la bibliothèque Unity Asset Store.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Logiciel utilisé :</h3>
-      <p>
-        Pour ce projet, j’ai utilisé Unity pour le développement du jeu et
-        Visual Studio Code pour la programmation des scripts.
-      </p>
+    <div class="cards-information">
+      <div class="card">
+        <h3>Les crédits :</h3>
+        <p>
+          Le projet a été programmé par moi. Le terrain et les mécaniques du jeu
+          ont également été réalisés par moi, tandis que les prefabs proviennent
+          de la bibliothèque Unity Asset Store.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Logiciel utilisé :</h3>
+        <p>
+          Pour ce projet, j’ai utilisé Unity pour le développement du jeu et
+          Visual Studio Code pour la programmation des scripts.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -135,26 +135,32 @@
   </div>
 
   <div class="galerie-programmation">
-    <h3>Ma programmation</h3>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="#" alt="" /></div>
-        <div class="swiper-slide"><img src="#" alt="" /></div>
-        <div class="swiper-slide"><img src="#" alt="" /></div>
+    <div class="wrapper">
+      <h3>Ma programmation</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="#" alt="" /></div>
+          <div class="swiper-slide"><img src="#" alt="" /></div>
+          <div class="swiper-slide"><img src="#" alt="" /></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
   </div>
 
   <div class="video-final">
-    <h3>Vidéo final:</h3>
+    <div class="wrapper">
+      <h3>Vidéo final:</h3>
+    </div>
   </div>
 </section>
 
 <section class="encouragement">
-  <h3>Vous avez apprécié mon projet ?</h3>
-  <a href="#" class="button">Contactez moi</a>
+  <div class="wrapper">
+    <h3>Vous avez apprécié mon projet ?</h3>
+    <a href="#" class="button">Contactez moi</a>
+  </div>
 </section>
 
 {% include '_partials/_footer.html' %}
