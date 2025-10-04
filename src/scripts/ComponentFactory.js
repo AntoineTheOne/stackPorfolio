@@ -1,14 +1,16 @@
-import Header from './components/Header.js';
+import Header from "./components/Header.js";
+import Carrousel from "./components/Carrousel.js";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Header,
+      Carrousel,
     };
     this.init();
   }
   init() {
-    const components = document.querySelectorAll('[data-component]');
+    const components = document.querySelectorAll("[data-component]");
 
     for (let i = 0; i < components.length; i++) {
       const element = components[i];
