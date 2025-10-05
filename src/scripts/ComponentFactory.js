@@ -2,7 +2,6 @@ import Header from "./components/Header.js";
 import Carrousel from "./components/Carrousel.js";
 import Modal from "./components/Modal.js";
 import Video from "./components/Video.js";
-import TextAnim from "./components/TextAnim.js";
 import Scrolly from "./components/Scrolly.js";
 export default class ComponentFactory {
   constructor() {
@@ -12,7 +11,6 @@ export default class ComponentFactory {
       Carrousel,
       Modal,
       Video,
-      TextAnim,
       Scrolly,
     };
     this.init();
