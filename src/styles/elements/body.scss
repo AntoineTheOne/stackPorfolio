@@ -8,12 +8,12 @@ html {
 }
 
 body {
-  cursor: none;
   background: var(--color-bg-test); //test couleur
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: var(--font-size-content);
   line-height: 1.6;
+  cursor: none;
 
   p {
     color: var(--color-white);
