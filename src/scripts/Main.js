@@ -35,7 +35,6 @@ class Main {
       );
     });
 
-    // 👁️ Effet de clignement au clic
     window.addEventListener("mousedown", () => {
       if (eye) {
         eye.classList.add("blink");
@@ -49,5 +48,5 @@ class Main {
     });
   }
 }
-
+w;
 new Main();

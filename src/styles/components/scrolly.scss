@@ -5,7 +5,7 @@
 .has-js {
   [data-scrolly="fromBottom"] {
     opacity: 0;
-    transform: translateY(180px);
+    transform: translateY(240px);
     transition: all 0.8s ease-out;
     &.is-active {
       opacity: 1;
@@ -14,7 +14,7 @@
   }
   [data-scrolly="fromLeft"] {
     opacity: 0;
-    transform: translateX(-180px);
+    transform: translateX(-240px);
     transition: all 0.8s ease-out;
     &.is-active {
       opacity: 1;
@@ -24,7 +24,7 @@
 
   [data-scrolly="fromRight"] {
     opacity: 0;
-    transform: translateX(180px);
+    transform: translateX(240px);
     transition: all 0.8s ease-out;
     &.is-active {
       opacity: 1;
