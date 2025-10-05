@@ -91,6 +91,7 @@ h1.a-propos {
   .list-icon {
     display: flex;
     gap: 20px;
+    list-style: none;
   }
   .arrows-down {
     transform: translateX(-45%);
