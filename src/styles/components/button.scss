@@ -1,5 +1,6 @@
 .button {
   width: fit-content;
+  color: var(--color-black);
   font-weight: 700;
   font-size: typo(20px, 28px);
   background-color: var(--color-primary);
@@ -7,6 +8,7 @@
   border: 5px solid var(--color-white);
   border-radius: 35px;
   transition: all 0.3s;
+  cursor: none;
 
   &:hover {
     background-color: var(--color-primary-hover);

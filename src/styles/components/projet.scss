@@ -86,6 +86,7 @@
   }
 
   .button-nav-carrousel-left {
+    cursor: none;
     margin: -50px 20px;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
@@ -100,6 +101,7 @@
     }
   }
   .button-nav-carrousel-right {
+    cursor: none;
     margin: -50px 20px;
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
@@ -178,7 +180,7 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .modal.active {
@@ -224,7 +226,6 @@
   right: 5%;
   font-size: 60px;
   color: var(--color-primary);
-  cursor: pointer;
   font-weight: bold;
   line-height: 1;
   transition: transform 0.2s ease, color 0.3s ease;

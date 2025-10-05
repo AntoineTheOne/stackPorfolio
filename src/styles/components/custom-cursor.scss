@@ -1,0 +1,43 @@
+.cursor-dot {
+  width: 40px;
+  height: 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .eye {
+    background-color: var(--color-black);
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+  }
+}
+.cursor-outline {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 101;
+  pointer-events: none;
+}
+/* --- Pupille de l'œil --- */
+.eye {
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  transition: height 0.1s ease, transform 0.1s ease;
+}
+
+/* --- Clignement au clic --- */
+.eye.blink {
+  height: 2px; /* Ferme verticalement */
+  transform: translateY(3px); /* Légère descente pour un effet naturel */
+}
