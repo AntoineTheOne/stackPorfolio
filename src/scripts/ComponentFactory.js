@@ -2,6 +2,7 @@ import Header from "./components/Header.js";
 import Carrousel from "./components/Carrousel.js";
 import Modal from "./components/Modal.js";
 import Video from "./components/Video.js";
+import TextAnim from "./components/TextAnim.js";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -10,6 +11,7 @@ export default class ComponentFactory {
       Carrousel,
       Modal,
       Video,
+      TextAnim,
     };
     this.init();
   }
