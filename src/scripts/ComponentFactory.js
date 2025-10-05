@@ -1,11 +1,13 @@
 import Header from "./components/Header.js";
 import Carrousel from "./components/Carrousel.js";
+import Modal from "./components/Modal.js";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Header,
       Carrousel,
+      Modal,
     };
     this.init();
   }
