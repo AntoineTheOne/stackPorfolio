@@ -1,6 +1,7 @@
 import Header from "./components/Header.js";
 import Carrousel from "./components/Carrousel.js";
 import Modal from "./components/Modal.js";
+import Video from "./components/Video.js";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -8,6 +9,7 @@ export default class ComponentFactory {
       Header,
       Carrousel,
       Modal,
+      Video,
     };
     this.init();
   }
