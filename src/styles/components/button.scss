@@ -5,13 +5,15 @@
   font-size: typo(20px, 28px);
   background-color: var(--color-primary);
   padding: 10px 30px;
-  border: 5px solid var(--color-white);
+  border: 5px solid var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
   border-radius: 35px;
   transition: all 0.3s;
   cursor: none;
 
   &:hover {
     background-color: var(--color-primary-hover);
+    border: 5px solid var(--color-primary-hover);
     transform: scale(1.1);
   }
 }
