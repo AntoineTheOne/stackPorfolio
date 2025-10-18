@@ -28,7 +28,7 @@
     z-index: 101;
     pointer-events: none;
   }
-  /* --- Pupille de l'œil --- */
+
   .eye {
     width: 8px;
     height: 8px;
@@ -37,9 +37,8 @@
     transition: height 0.1s ease, transform 0.1s ease;
   }
 
-  /* --- Clignement au clic --- */
   .eye.blink {
-    height: 2px; /* Ferme verticalement */
-    transform: translateY(3px); /* Légère descente pour un effet naturel */
+    height: 2px;
+    transform: translateY(3px);
   }
 }
