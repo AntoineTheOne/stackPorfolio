@@ -9,6 +9,10 @@
     img {
       display: block;
     }
+
+    @media screen and (max-width: $breakpoint-md) {
+      gap: 50px;
+    }
   }
 
   .card {
@@ -16,9 +20,17 @@
     display: grid;
     grid-template-columns: 4fr 8fr;
 
+    @media screen and (max-width: $breakpoint-md) {
+      grid-template-columns: 4fr;
+    }
+
     &.left_image {
       grid-template-columns: 4fr 8fr;
       background-color: var(--color-bg-secondary);
+
+      @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 4fr;
+      }
 
       img {
         height: 100%;
@@ -26,10 +38,18 @@
       }
 
       .card_content {
-        border-radius: 0 19px 19px 0;
+        border-radius: 0 20px 20px 0;
+
+        @media screen and (max-width: $breakpoint-md) {
+          border-radius: 0 0 20px 20px;
+        }
       }
       .card_media {
         border-radius: 20px 0 0 20px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          border-radius: 20px 20px 0 0;
+        }
       }
     }
 
@@ -37,15 +57,35 @@
       grid-template-columns: 8fr 4fr;
       background-color: var(--color-bg-secondary);
 
+      @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 4fr;
+
+        .card_content {
+          order: 2;
+        }
+
+        .card_media {
+          order: 1;
+        }
+      }
+
       img {
         height: 100%;
         width: 100%;
       }
       .card_content {
-        border-radius: 19px 0 0 19px;
+        border-radius: 0 0 20px 20px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          border-radius: 0 0 20px 20px;
+        }
       }
       .card_media {
         border-radius: 0 20px 20px 0;
+
+        @media screen and (max-width: $breakpoint-md) {
+          border-radius: 20px 20px 0 0;
+        }
       }
     }
 
@@ -84,6 +124,10 @@
     text-align: center;
     margin: 0;
     padding: 70px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 20px;
+    }
 
     &.ligne-cote {
       border-right: 5px solid var(--color-primary);

@@ -1,3 +1,6 @@
+.video-final {
+  margin-top: 50px;
+}
 .video {
   background-color: var(--color-black);
   border-radius: 0 0 30px 30px;
@@ -7,6 +10,9 @@
   padding-bottom: 45%;
   position: relative;
 
+  @media screen and (max-width: $breakpoint-md) {
+    height: 500px;
+  }
   img {
     object-fit: cover;
     height: 100%;
@@ -26,7 +32,7 @@
     transform-origin: 0 0;
     transform: translate(-50%, -50%);
     z-index: 2;
-    scale: 2;
+    scale: 1;
 
     .is-video-ready & {
       opacity: 1;
@@ -40,5 +46,6 @@
 
 .video_media {
   @include cover();
+
   border-radius: 0 0 30px 30px;
 }

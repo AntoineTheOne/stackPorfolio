@@ -17,6 +17,10 @@
     box-shadow: 0 0 20px var(--color-primary);
     border-radius: 30px;
   }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    grid-template-columns: 4fr;
+  }
 }
 
 .galerie-image,
@@ -26,6 +30,10 @@
   border: 5px solid var(--color-primary);
   box-shadow: 0 0 20px var(--color-primary);
   border-radius: 30px;
+
+  @media screen and (max-width: $breakpoint-md) {
+    display: none;
+  }
 
   h3 {
     text-align: center;
@@ -146,11 +154,22 @@
   &.right_image {
     grid-template-columns: 6fr 6fr;
 
+    @media screen and (max-width: $breakpoint-md) {
+      grid-template-columns: 4fr;
+
+      .card_content {
+        order: 2;
+      }
+    }
+
     img {
       border-radius: 0 30px 30px 0;
+
+      @media screen and (max-width: $breakpoint-md) {
+        border-radius: 30px 30px 0 0;
+      }
     }
     .card_content {
-      border-radius: 30px 0 0 30px;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -158,6 +177,11 @@
       border: 5px solid var(--color-primary);
       box-shadow: 0 0 20px var(--color-primary);
       width: 100%;
+      border-radius: 30px 0 0 30px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        border-radius: 0 0 30px 30px;
+      }
 
       hr {
         border: none;
@@ -199,8 +223,7 @@
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-  max-width: 90%;
-  max-height: 90%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,9 +243,10 @@
 
 .modal-img {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 100%;
   border-radius: 6px;
   object-fit: contain;
+  transform-origin: center center;
 }
 
 .close-modal {
