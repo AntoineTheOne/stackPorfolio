@@ -97,6 +97,9 @@
   h2 {
     margin: 100px 0;
     text-align: center;
+    @media screen and (max-width: $breakpoint-sm) {
+      margin: 50px;
+    }
   }
 
   h3,

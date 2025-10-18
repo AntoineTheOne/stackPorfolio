@@ -5,6 +5,8 @@
    ========================================================================== */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* ✅ bloque tout défilement horizontal */
+  width: 100%;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
   font-size: var(--font-size-content);
   line-height: 1.6;
   cursor: none;
+  overflow-x: hidden; /* ✅ bloque tout défilement horizontal */
+  width: 100%;
 
   p {
     color: var(--color-white);
