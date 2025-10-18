@@ -2,6 +2,10 @@
   margin-bottom: 100px;
 }
 
+.cards_projets {
+  display: flex;
+  flex-direction: column;
+}
 .mes-projets .card {
   margin: 100px 0;
   display: grid;
@@ -10,12 +14,13 @@
     height: 100%;
     width: 100%;
     display: block;
-    border: 5px solid var(--color-white);
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
   }
 
   &.left_image {
     grid-template-columns: 6fr 6fr;
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-bg-secondary);
 
     img {
       border-radius: 30px 0 0 30px;
@@ -42,15 +47,17 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 5px solid var(--color-white);
+    align-items: left;
+    text-align: left;
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
+
     width: 100%;
 
     hr {
       border: none;
       width: 100%;
-      border-bottom: 5px solid white;
+      border-bottom: 5px solid var(--color-primary);
     }
   }
 }
@@ -58,19 +65,19 @@
 .mes-projets {
   h2 {
     margin: 100px;
-    text-align: center;
+    text-align: left;
   }
 
   h3 {
-    margin: 40px;
+    margin: 0.6em 1em;
   }
   h4 {
-    margin: 20px;
+    margin: 1em 2em;
   }
   p {
-    margin: 1em 3em;
+    margin: 1em 2em;
   }
   .button {
-    margin: 30px;
+    margin: 1em 2em;
   }
 }

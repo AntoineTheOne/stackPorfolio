@@ -3,6 +3,8 @@ import Carrousel from "./components/Carrousel.js";
 import Modal from "./components/Modal.js";
 import Video from "./components/Video.js";
 import Scrolly from "./components/Scrolly.js";
+import CustomCursor from "./components/CustomCursor.js";
+import Accordion from "./components/Accordion.js";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -12,6 +14,8 @@ export default class ComponentFactory {
       Modal,
       Video,
       Scrolly,
+      CustomCursor,
+      Accordion,
     };
     this.init();
   }

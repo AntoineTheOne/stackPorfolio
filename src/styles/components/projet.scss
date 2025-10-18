@@ -11,18 +11,20 @@
   gap: 40px;
 
   .card {
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-bg-secondary);
     padding: 0 50px;
-    border: 5px solid var(--color-white);
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
     border-radius: 30px;
   }
 }
 
 .galerie-image,
 .galerie-programmation {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-secondary);
   margin: 100px 0;
-  border: 5px solid var(--color-white);
+  border: 5px solid var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary);
   border-radius: 30px;
 
   h3 {
@@ -34,7 +36,8 @@
     margin: 0;
     border: none;
     width: 100%;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
   }
 
   .swiper {
@@ -128,7 +131,7 @@
   }
 }
 .processus-projet .card {
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-bg-secondary);
   display: grid;
   border-radius: 30px;
 
@@ -136,12 +139,12 @@
     height: 100%;
     width: 100%;
     display: block;
-    border: 5px solid var(--color-white);
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
   }
 
   &.right_image {
     grid-template-columns: 6fr 6fr;
-    background-color: var(--color-bg-primary);
 
     img {
       border-radius: 0 30px 30px 0;
@@ -152,13 +155,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 5px solid var(--color-white);
+      border: 5px solid var(--color-primary);
+      box-shadow: 0 0 20px var(--color-primary);
       width: 100%;
 
       hr {
         border: none;
         width: 100%;
-        border-bottom: 5px solid white;
+        border-bottom: 5px solid var(--color-primary);
+        box-shadow: 0 0 20px var(--color-primary);
       }
       p {
         margin: 1em 3em;
@@ -239,9 +244,11 @@
 .video-final {
   .wrapper {
     padding: 0;
-    background-color: var(--color-bg-primary);
-    border: 5px solid var(--color-white);
-    border-radius: 30px;
+
+    background-color: var(--color-bg-secondary);
+    border: 5px solid var(--color-primary);
+    box-shadow: 0 0 20px var(--color-primary);
+    border-radius: 30px 30px;
 
     h3 {
       margin: 0;
@@ -252,7 +259,8 @@
       margin: 0;
       border: none;
       width: 100%;
-      border-bottom: 5px solid white;
+      border-bottom: 5px solid var(--color-primary);
+      box-shadow: 0 0 20px var(--color-primary);
     }
   }
 }

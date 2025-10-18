@@ -13,13 +13,14 @@
     gap: 40px;
 
     .card {
-      background-color: var(--color-bg-primary);
+      background-color: var(--color-bg-secondary);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 20px 0;
-      border: 5px solid var(--color-white);
+      border: 5px solid var(--color-primary);
+      box-shadow: 0 0 20px var(--color-primary);
       border-radius: 40px;
     }
   }
@@ -36,10 +37,11 @@
   }
   .sociaux {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 60px;
+    gap: 30px;
     padding: 0;
-    margin-right: 30px;
 
     li {
       list-style: none;
@@ -54,7 +56,6 @@
     display: grid;
     grid-template-columns: 6fr 6fr;
     justify-content: center;
-    align-items: center;
 
     form {
       display: flex;
@@ -78,10 +79,12 @@ label {
 
 input,
 textarea {
-  padding: 12px;
-  border: 5px solid var(--color-black);
+  color: var(--color-white);
+  background-color: var(--color-bg-secondary);
+  padding: 20px;
   border-radius: 20px;
-  font-size: 24px;
+  border: 5px solid var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary);
 }
 
 textarea {
