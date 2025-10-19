@@ -1,7 +1,6 @@
 .header {
   --header-height: 100px;
-  font-weight: 600;
-
+  font-weight: bold;
   .wrapper {
     align-items: center;
     display: flex;
@@ -28,7 +27,6 @@
   @media screen and (min-width: $breakpoint-lg) {
     padding: 0 var(--spacing-sm);
   }
-
   .header-is-hidden.is-scrolling-down:not(.nav-is-active) & {
     transform: translateY(-100%) translateY(4px);
   }

@@ -3,11 +3,6 @@
    Le body permet d'initialiser les propriétés générales de la page.
    Les éléments de la page vont hérités des propriétés inscrite dans body
    ========================================================================== */
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden; /* ✅ bloque tout défilement horizontal */
-  width: 100%;
-}
 
 body {
   background: var(--color-bg-primary); //test couleur
@@ -16,7 +11,7 @@ body {
   font-size: var(--font-size-content);
   line-height: 1.6;
   cursor: none;
-  overflow-x: hidden; /* ✅ bloque tout défilement horizontal */
+
   width: 100%;
 
   p {
