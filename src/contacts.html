@@ -58,7 +58,7 @@
 <section class="contact-form">
   <div class="wrapper">
     <div class="form-container">
-      <form action="submit.php" method="POST">
+      <form action="submit.php" method="POST" novalidate>
         <div class="card">
           <label for="name">Votre nom</label>
           <input
@@ -91,7 +91,10 @@
           ></textarea>
         </div>
 
-        <a class="button" href="#">Envoyer</a>
+        <!-- ✅ Bouton d'envoi -->
+        <div class="card">
+          <button type="submit" class="button">Envoyer</button>
+        </div>
       </form>
 
       <div class="form-text">
@@ -101,3 +104,37 @@
   </div>
 </section>
 {% include '_partials/_footer.html' %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const messageBox = document.createElement("div");
+    messageBox.classList.add("form-message");
+    form.appendChild(messageBox);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault(); // ❌ empêche le rechargement de page
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch("submit.php", {
+          method: "POST",
+          body: formData,
+        });
+
+        const text = await response.text();
+
+        // ✅ Affiche le message retourné par PHP
+        messageBox.textContent = text;
+        messageBox.style.color = text.includes("✅") ? "limegreen" : "crimson";
+
+        // Optionnel : reset du formulaire
+        if (text.includes("✅")) form.reset();
+      } catch (error) {
+        messageBox.textContent = "❌ Erreur réseau, veuillez réessayer.";
+        messageBox.style.color = "crimson";
+      }
+    });
+  });
+</script>
