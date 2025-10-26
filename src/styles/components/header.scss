@@ -42,8 +42,6 @@
   color: var(--color-primary);
 }
 
-// Mettre ton .header__toggle ici
-
 .header__toggle {
   --bar-height: 8px;
   --bar-spacer: 6px;
@@ -219,9 +217,11 @@
   }
 }
 
-.nav-is-active body {
+html.nav-is-active {
   overflow: hidden;
+  height: 100vh; // évite le scroll sur mobile
   @media screen and (min-width: $breakpoint-md) {
     overflow: visible;
+    height: auto;
   }
 }

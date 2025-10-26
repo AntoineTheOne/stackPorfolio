@@ -15,11 +15,11 @@ export default class Header {
   init() {
     this.setOptions();
 
-    window.addEventListener('scroll', this.onScroll.bind(this));
+    window.addEventListener("scroll", this.onScroll.bind(this));
   }
 
   setOptions() {
-    const threshold = this.element.getAttribute('data-threshold');
+    const threshold = this.element.getAttribute("data-threshold");
     if (threshold) {
       this.options.threshold = parseFloat(threshold);
     }
@@ -36,30 +36,30 @@ export default class Header {
     if (
       this.scrollPosition >
         document.scrollingElement.scrollHeight * this.options.threshold &&
-      !this.element.hasAttribute('data-always-show')
+      !this.element.hasAttribute("data-always-show")
     ) {
-      this.html.classList.add('header-is-hidden');
+      this.html.classList.add("header-is-hidden");
     } else {
-      this.html.classList.remove('header-is-hidden');
+      this.html.classList.remove("header-is-hidden");
     }
   }
 
   setDirections() {
     if (this.scrollPosition >= this.lastScrollPosition) {
-      this.html.classList.add('is-scrolling-down');
-      this.html.classList.remove('is-scrolling-up');
+      this.html.classList.add("is-scrolling-down");
+      this.html.classList.remove("is-scrolling-up");
     } else {
-      this.html.classList.add('is-scrolling-up');
-      this.html.classList.remove('is-scrolling-down');
+      this.html.classList.add("is-scrolling-up");
+      this.html.classList.remove("is-scrolling-down");
     }
   }
 
   initNavMobile() {
-    const toggle = this.element.querySelector('.js-toggle');
-    toggle.addEventListener('click', this.onToggleNav.bind(this));
+    const toggle = this.element.querySelector(".js-toggle");
+    toggle.addEventListener("click", this.onToggleNav.bind(this));
   }
 
   onToggleNav() {
-    document.documentElement.classList.toggle('nav-is-active');
+    document.documentElement.classList.toggle("nav-is-active");
   }
 }
