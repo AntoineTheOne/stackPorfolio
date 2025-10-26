@@ -95,7 +95,6 @@ input,
 textarea {
   color: var(--color-white);
   background-color: var(--color-bg-secondary);
-  padding: 20px 10px;
   border-radius: 30px;
   border: 5px solid var(--color-primary);
   box-shadow: 0 0 20px var(--color-primary);
@@ -104,7 +103,6 @@ textarea {
   box-sizing: border-box;
 }
 input::placeholder {
-  padding: 0 10px;
   color: var(--color-white);
 }
 
@@ -117,12 +115,18 @@ textarea {
 .form-text {
   padding: 0 50px;
   line-height: 1.4;
-
   @media screen and (max-width: $breakpoint-md) {
     padding: 40px 0;
   }
 }
 textarea::placeholder {
-  padding: 0 20px;
   color: var(--color-white);
+}
+#message,
+#email,
+#name {
+  padding: 20px;
+}
+#message {
+  height: 300px;
 }
