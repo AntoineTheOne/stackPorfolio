@@ -16,6 +16,10 @@
     border: 5px solid var(--color-primary);
     box-shadow: 0 0 20px var(--color-primary);
     border-radius: 30px;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      padding: 0 25px;
+    }
   }
 
   @media screen and (max-width: $breakpoint-sm) {

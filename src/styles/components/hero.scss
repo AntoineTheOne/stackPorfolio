@@ -1,6 +1,11 @@
 //-------Hero accueil-----------//
 
 .hero {
+  h1 {
+    @media screen and (max-width: $breakpoint-md) {
+      max-width: 350px;
+    }
+  }
   position: relative;
   min-height: calc(100vh - 100px);
 

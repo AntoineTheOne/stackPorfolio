@@ -35,6 +35,12 @@
 .icon--lg {
   height: 2.5em;
   width: 2.5em;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    fill: var(--color-primary);
+    transform: scale(1.4);
+  }
 }
 
 .icon--xl {
