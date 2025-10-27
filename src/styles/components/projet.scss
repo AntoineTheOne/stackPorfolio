@@ -1,6 +1,10 @@
 .presentation-projet {
   h2 {
     margin: 100px 0;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      margin: 50px 0;
+    }
   }
   margin: 100px 0;
   color: var(--color-white);
@@ -196,7 +200,15 @@
         box-shadow: 0 0 20px var(--color-primary);
       }
       p {
-        margin: 1em 3em;
+        margin: 40px 40px;
+
+        @media screen and (max-width: $breakpoint-md) {
+          margin: 20px 40px;
+        }
+      }
+      h3 {
+        width: 100%;
+        padding: 0 40px;
       }
     }
   }
