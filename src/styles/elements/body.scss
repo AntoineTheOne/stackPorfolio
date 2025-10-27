@@ -22,7 +22,7 @@ body {
 }
 html,
 body {
-  @media screen and (max-width: $breakpoint-md) {
+  @media screen and (max-width: $breakpoint-lg) {
     width: 100%;
     overflow-x: hidden;
   }

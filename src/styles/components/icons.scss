@@ -38,9 +38,9 @@
 }
 .sociaux .icon--lg {
   transition: all 0.2s ease-in-out;
-
+  fill: var(--color-primary);
   &:hover {
-    fill: var(--color-primary);
+    fill: var(--color-primary-hover);
     transform: scale(1.4);
   }
 }
