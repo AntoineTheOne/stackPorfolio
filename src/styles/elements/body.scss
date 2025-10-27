@@ -20,3 +20,10 @@ body {
     font-size: typo(20px, 24px);
   }
 }
+html,
+body {
+  @media screen and (max-width: $breakpoint-lg) {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

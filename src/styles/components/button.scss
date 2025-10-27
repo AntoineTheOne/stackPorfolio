@@ -1,5 +1,6 @@
 .button {
   width: fit-content;
+  display: flex;
   color: var(--color-black);
   font-weight: 700;
   font-size: typo(20px, 28px);

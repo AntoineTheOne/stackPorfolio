@@ -36,7 +36,14 @@
   height: 2.5em;
   width: 2.5em;
 }
-
+.sociaux .icon--lg {
+  transition: all 0.2s ease-in-out;
+  fill: var(--color-primary);
+  &:hover {
+    fill: var(--color-primary-hover);
+    transform: scale(1.4);
+  }
+}
 .icon--xl {
   height: 7em;
   width: 7em;
