@@ -1,3 +1,5 @@
+/* --------- Curseur --------- */
+
 @media screen and (min-width: $breakpoint-md) {
   .cursor-dot {
     width: 40px;
@@ -30,6 +32,7 @@
     pointer-events: none;
   }
 
+  /* --------- Oeil --------- */
   .eye {
     width: 8px;
     height: 8px;
@@ -38,6 +41,7 @@
     transition: height 0.1s ease, transform 0.1s ease;
   }
 
+  /* --------- clignement --------- */
   .eye.blink {
     height: 2px;
     transform: translateY(3px);

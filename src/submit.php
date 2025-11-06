@@ -32,9 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "✅ Message envoyé avec succès !";
+        echo "Message envoyé avec succès !";
     } else {
-        echo "❌ Erreur : le message n’a pas pu être envoyé.";
+        echo "Erreur : le message n’a pas pu être envoyé.";
     }
 }
 ?>
