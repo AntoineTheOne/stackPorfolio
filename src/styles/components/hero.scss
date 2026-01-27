@@ -78,6 +78,12 @@
     }
   }
 
+  .hero_content {
+    @media (max-width: 768px) {
+      margin-top: 20%;
+    }
+  }
+
   @keyframes upDown {
     0%,
     100% {
