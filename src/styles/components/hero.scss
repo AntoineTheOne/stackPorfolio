@@ -143,4 +143,10 @@ h1.a-propos {
     list-style: none;
     padding-left: 0;
   }
+
+  .hero_content {
+    @media (max-width: 768px) {
+      margin-top: 20%;
+    }
+  }
 }

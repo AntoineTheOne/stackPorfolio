@@ -1,16 +1,15 @@
 .presentation-projet {
   h2 {
     margin: 100px 0;
-
-    @media screen and (max-width: $breakpoint-sm) {
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    h2 {
       margin: 50px 0;
     }
   }
-  margin: 100px 0;
   color: var(--color-white);
 }
 .cards-information {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: 6fr 6fr;
   gap: 40px;
@@ -30,6 +29,7 @@
   @media screen and (max-width: $breakpoint-sm) {
     grid-template-columns: 4fr;
     margin-top: 50px;
+    padding-top: 0px;
   }
 }
 
@@ -146,6 +146,11 @@
 .processus-projet {
   h2 {
     margin: 100px 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    h2 {
+      margin: 70px 0;
+    }
   }
 }
 .processus-projet .card {
@@ -308,6 +313,17 @@
   }
 }
 
+.credit {
+  h2 {
+    margin: 100px 0;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    h2 {
+      margin: 50px 0;
+    }
+  }
+}
+
 .encouragement {
   .wrapper {
     .content {
@@ -317,6 +333,9 @@
       justify-content: center;
       align-items: center;
       margin: 100px 0;
+      @media screen and (max-width: $breakpoint-md) {
+        margin: 50px 0;
+      }
     }
   }
 }
